@@ -470,16 +470,14 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-close-button" type="button">
           <svg class="modal-icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
-        <h2 class="modal-title">
-          Leave your contacts and we will call you back
-        </h2>
+        <p class="modal-text">Leave your contacts and we will call you back</p>
         <div class="form-field">
           <label class="form-label" for="input-name">Name</label>
           <div class="input-wrapper">
@@ -527,19 +525,27 @@
           <textarea
             class="form-input"
             name="text-input"
+            id="text-input"
             placeholder="Text input"
             rows="5"
           ></textarea>
         </div>
-        <label class="checkbox-label" for="user-privacy">
-          <span class="checkbox-custom" aria-hidden="true">
-            <svg class="checkbox-icon" width="10" height="8">
-              <use href="./images/icons.svg#icon-active-checkbox"></use>
-            </svg>
-          </span>
-          I accept the terms and conditions of the
-          <a href="#" class="policy-link">Privacy Policy</a>
-        </label>
+        <div class="modal-terms">
+          <input
+            class="modal-checkbox visually-hidden"
+            id="user-privacy"
+            type="checkbox"
+            value="true"
+            name="user-privacy"
+          />
+          <label class="modal-terms-text" for="user-privacy">
+            <span class="modal-terms-checkbox">
+              <svg class="modal-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-checkbox"></use></svg></span
+            >I accept the terms and conditions of the
+            <a href="/" class="privacy-policy">Privacy Policy</a>
+          </label>
+        </div>
         <button class="form-button" type="submit">Send</button>
       </div>
     </div>
