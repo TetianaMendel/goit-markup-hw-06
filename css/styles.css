@@ -260,9 +260,7 @@ button {
     background-color: #e7e9fc;
     padding: 0;
 }
-.mobile-icon-close {
 
-}
 .mobile-menu-nav {
     margin-bottom: auto;
 }
@@ -303,14 +301,14 @@ button {
 .mobile-contacts-link.current {
     color: #4d5ae5;
 }
-.social-list {
+.mobile-menu .social-list {
     display: flex;
     justify-content: flex-start;
     gap: 24px;
     margin-top: 48px;
 }
 
-.socials-link {
+.mobile-menu .socials-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -404,12 +402,12 @@ button {
 @media screen and (min-width: 768px) {
     .title-hero {
         font-size: 56px;
-        line-height: 1,07;
+        line-height: 1.07;
         margin: 0 auto 36px;
         max-width: 496px;
     }
 }
-@media screen and (min-width: 1156px) {
+@media screen and (min-width: 1158px) {
     .title-hero {
         margin: 0 auto 48px;
     }
@@ -548,6 +546,11 @@ button {
     gap: 24px;
 }
 
+@media screen and (min-width: 1158px) {
+    .team-list {
+        flex-wrap: nowrap;
+    }
+}
 .team-item {
     background: #fff;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -576,7 +579,7 @@ button {
     margin-bottom: 16px;
 }
 
-.social-list {
+.section-team .social-list {
     display: flex;
     justify-content: center;
     gap: 24px;
@@ -599,11 +602,7 @@ button {
     background-color: #404bbf;
 
 }
-@media screen and (min-width: 1156px) {
-    .team-list {
-     flex-wrap: nowrap;
-    }
-}
+
 /* #endregion section team */
 /* #region portfolio */
 
@@ -633,7 +632,7 @@ button {
         column-gap: 24px;
     }
 }
-@media screen and (max-width: 1155px) {
+@media screen and (max-width: 1157px) {
     .overlay-text {
         display: none;
     }
@@ -647,7 +646,7 @@ button {
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
 }
-@media screen and (min-width: 1156px) {
+@media screen and (min-width: 1158px) {
     .portfolio-item {
         flex-basis: calc((100% - 2 * 24px) / 3);
     }
