@@ -17,7 +17,7 @@ ul,
 ol {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-left: 0;
 }
 
 a {
@@ -34,9 +34,10 @@ button {
     cursor: pointer;
 }
 
-/* textarea {
+textarea {
     resize: none;
-} */
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -329,6 +330,7 @@ button {
 /* #endregion mobile menu */
 /* #region hero */
 .section-hero {
+    width: 100%;
     max-width: 320px;
     margin: 0 auto;
     background: #2e2f42;
@@ -429,10 +431,8 @@ button {
     margin: 0 auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 1156px) {
-    .btn-order:hover, .btn-order:focus {
+.btn-order:hover, .btn-order:focus {
     background-color: #404bbf;
-    }
 }
 /* #endregion hero */
 /* #region features */
@@ -484,7 +484,7 @@ button {
         text-align: left;
      }
 }
-@media screen and (min-width: 1156px) {
+@media screen and (min-width: 1158px) {
     .section-features {
         padding: 120px 0;
     }
@@ -576,7 +576,7 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .section-team .social-list {
@@ -610,7 +610,6 @@ button {
     width: 100%;
     height: auto;
 }
-
 .portfolio {
     padding: 96px 0;
 }
@@ -641,13 +640,11 @@ button {
     background: #fff;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
-@media screen and (min-width: 768px) {
-    .portfolio-item {
-        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   }
-}
+
 @media screen and (min-width: 1158px) {
     .portfolio-item {
+        box-shadow: none;
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         flex-basis: calc((100% - 2 * 24px) / 3);
     }
 }
@@ -1035,7 +1032,6 @@ button {
 
 .form-input:focus+svg {
     fill: #4d5ae5;
-    ;
 }
 
 .form-textarea {
